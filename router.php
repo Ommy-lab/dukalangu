@@ -1,0 +1,10 @@
+<?php
+$path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+
+if ($path === '/' || $path === '') {
+    require 'dashboard.php';
+    exit;
+}
+
+return false;
+?>
