@@ -1,4 +1,2 @@
 <?php
-header("Location: dashboard.php");
-exit();
-?>
+echo "INDEX WORKS";
